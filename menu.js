@@ -1,0 +1,1 @@
+var menu = ["home", "about", "contact","service"];
