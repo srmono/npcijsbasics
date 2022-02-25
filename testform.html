@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>When you submit the form, a function is triggered which alerts some text.</p>
+
+<form id="test" onsubmit="myFunction()">
+  Enter name: <input id="fname" type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+var formEl = document.getElementById("test");
+var fname = document.getElementById("fname");
+
+test.addEventListener("submit", myFunction);
+
+function myFunction(e) {
+   e.preventDefault();
+   var fnameval = fname.value;
+   
+   if(fnameval.length < 6){
+      alert("value must have 6 charachters")
+      return null;
+   }
+  alert(fnameval);
+}
+</script>
+
+</body>
+</html>
